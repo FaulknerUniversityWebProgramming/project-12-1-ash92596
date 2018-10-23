@@ -1,5 +1,7 @@
 <?php 
 
+  $genres = array("Abstract", "Baroque", "Gothic", "Renaissance");
+  $subjects = array("Animals", "Landscape", "People");
 
 ?>
 <!DOCTYPE html>
