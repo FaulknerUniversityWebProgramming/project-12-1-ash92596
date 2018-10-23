@@ -14,9 +14,10 @@
 </head>
 <body>
 <?php include 'header.inc.php'; ?>
+
     
 <main>
-<form class="form"  id="mainForm">
+<form class="form"  id="mainForm" action="art-process.php" method="POST">
    <fieldset class="form__panel">
       <legend class="form__heading">Edit Art Work Details</legend>
         <p class="form__row">
