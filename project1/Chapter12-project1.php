@@ -1,9 +1,17 @@
 <?php 
-
   $genres = array("Abstract", "Baroque", "Gothic", "Renaissance");
   $subjects = array("Animals", "Landscape", "People");
 
+  function outputArray($array) {
+        foreach ($array as $key => $value) {
+            echo '<option>'; 
+            echo $value;
+            echo '</option>';      
+        }
+  }
+
 ?>
+
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -34,14 +42,14 @@
            <label>Genre</label><br/>
            <select name="genre" class="form__input form__select">
               <option>Choose genre</option> 
-              
+              <?php outputArray($genres);?>
            </select>
        </p>
        <p class="form__row"> 
            <label>Subject</label><br/>
            <select name="subject" class="form__input form__select">
               <option>Choose subject</option> 
-              
+              <?php outputArray($subjects);?>
            </select>
        </p>
        <p class="form__row">	
